@@ -11,8 +11,57 @@
 
 let array = ["2", "2", "8", "Q"];
 let array2 = ["2", "2", "K"];
-let array3 = ["4" , "A"];
+let array3 = ["4" , "9", "A"];
 let array4 = ["K", "A"];
+
+// function Card(s, n){
+//   //Private local variables
+//   var suit = s;
+//   var number = n;
+//
+//   //Returns the actual suit name
+//   this.getSuit = function () {
+//     switch(suit) {
+//       case 1:
+//         return: "Spades";
+//       case 2:
+//         return: "Hearts";
+//       case 3:
+//         return: "Diamonds";
+//       case 4:
+//         return: "Clubs";
+//     }
+//   };
+//
+//   //Returns face cards and regular numbers
+// this.getNumber = function() {
+//   switch(number) {
+//       case 1:
+//         return: "Ace";
+//       case 11:
+//         return: "Jack";
+//       case 12:
+//         return: "Queen";
+//       case 13:
+//         return: "King";
+//       default:
+//         return number;
+//   }
+// };
+//
+// //Turns number into correct blackjack value
+// this.getValue = function () {
+//   if (n > 9) {
+//     return 10;
+//   } else if (n === 1) {
+//     return 11;
+//   } else {
+//     return n;
+//   }
+// };
+
+
+
 
 function handValue(hand) {
 
@@ -33,10 +82,12 @@ function handValue(hand) {
         number += 1;
     }
   }
+
+
     return number;
   };
 
-console.log(handValue(array4));
+console.log(handValue(array3));
 //   return;
 // }
 
